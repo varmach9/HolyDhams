@@ -10,7 +10,7 @@ const Govardhan = () => {
   const [e,se]=useState(0)
   const [f,sf]=useState(0)
   const [g,sg]=useState(0)
-  const [page,setpage]=useState(1)
+  const [page,setpage]=useState(2)
   return (
     <div>
       {page===1 && <div style={{marginTop:"5%",marginLeft:"8%",marginRight:"5%"}}>
