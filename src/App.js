@@ -8,10 +8,14 @@ import Settings from './Pages/Settings';
 import Govardhan from './Pages/VrajMandal places/Govardhan';
 import Vrindavan from "./Pages/VrajMandal places/Vrindavan"
 import Belvan from './Pages/VrajMandal places/Belvan';
-import { useState } from 'react';
+import { useState, useContext } from 'react';
+import {AudioContext} from "./AudioContext"
+import Audiopage from './Pages/Audio';
 function App() {
   const [isSidebarOpen,s]=useState(false)
+  const [audio,setaudio]=useState([1,2,3,4])
   return (
+  <AudioContext.Provider value={{audio,setaudio}}>
   <div>
       <div id="sidebar">
         <ul>
@@ -73,10 +77,12 @@ function App() {
           <Route path="/govardhan" element={<Govardhan/>} />
           <Route path="/vrindavan" element={<Vrindavan/>} />
           <Route path="/belvan" element={<Belvan/>} />
+          <Route path="/audio" element={<Audiopage/>} />
         </Routes>  
           </div>  
     </Router>
     </div>
+    </AudioContext.Provider>
   );
 }
 
