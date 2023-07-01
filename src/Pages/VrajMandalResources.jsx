@@ -6,8 +6,8 @@ import { useNavigate } from 'react-router-dom';
 import HeadphonesIcon from '@mui/icons-material/Headphones';
 export const Videos = () => {
   return (
-    <div style={{margin:"10%"}}>
-      <div>Videos</div>
+    <div style={{margin:"10%",marginTop:"20%"}}>
+      {/* <div>Videos</div> */}
       <div className="" style={{marginLeft:"0px",width:"300px",marginTop:'30px'}}><YoutubeEmbed embedId="XHoocWGgap0" title="Varindavan Parikrama" /></div>
       <div className="" style={{marginLeft:"0px",width:"300px",marginTop:'30px'}}><YoutubeEmbed embedId="NeBDbtvyL0I" title="Glories of Govardhan" /></div>
       <div className="" style={{marginLeft:"0px",width:"300px",marginTop:'30px'}}><YoutubeEmbed embedId="0L9HNNAYDj4" title="Varsana" /></div>

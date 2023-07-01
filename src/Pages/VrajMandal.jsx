@@ -6,11 +6,10 @@ const VrajMandal = () => {
   const [page,setpage]=useState(1)
   const navigate = useNavigate();
   return (
-    <div>
+    <div >
       
-      <div className='body' style={{margin:"10%"}}>
-      <div>VrajMandal</div>
-      {page===1 && <div style={{display:""}}> 
+      <div className='body'>
+      {page===1 && <div style={{margin:"10%"}}> 
       <div style={{float:"left",border:"1px solid",width:"35%",paddingLeft:"20px",marginLeft:"0%",marginTop:"20px",height:"30px"}}  onClick={()=>{navigate('/Vrindavan')}}>Vrindavan</div>
       <div style={{float:"left",border:"1px solid",width:"35%",paddingLeft:"20px",marginLeft:"10%",marginTop:"20px",height:"30px"}} onClick={()=>{navigate('/Govardhan')}}>Govardhan</div>
       <div style={{float:"left",border:"1px solid",width:"35%",paddingLeft:"20px",marginLeft:"0%",marginTop:"20px",height:"30px"}}  onClick={()=>{navigate('/Belvan')}}>Belvan</div>
@@ -25,15 +24,13 @@ const VrajMandal = () => {
       </div>}
       {page===2 && <div> <Lectures/></div>}
       {page===3 && <div> <Videos/></div>}
-      {page===4 && <div> <Photos/></div>}
-      {page===5 && <div> <More/></div>}
+      {page===4 && <div> <More/></div>}
       </div>
       <div className='footer' style={{display:"flex"}}>
-        <div onClick={()=>{setpage(4)}} style={{width:"20%",float:"left"}}>Photos</div>
-        <div onClick={()=>{setpage(3)}} style={{width:"20%",float:"left"}}>Videos</div>
-        <div onClick={()=>{setpage(1)}} style={{width:"20%",float:"left",height:"20px"}}>Read</div>
-        <div onClick={()=>{setpage(2)}} style={{width:"20%",float:"left"}}>Lectures</div>
-        <div onClick={()=>{setpage(5)}} style={{width:"20%",float:"left"}}>More</div>
+        <div onClick={()=>{setpage(3)}} style={{width:"25%",float:"left"}}>Videos</div>
+        <div onClick={()=>{setpage(1)}} style={{width:"25%",float:"left",height:"20px"}}>Read</div>
+        <div onClick={()=>{setpage(2)}} style={{width:"25%",float:"left"}}>Lectures</div>
+        <div onClick={()=>{setpage(4)}} style={{width:"25%",float:"left"}}>More</div>
       </div>
     </div>
     
