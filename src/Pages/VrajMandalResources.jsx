@@ -143,10 +143,6 @@ export const Lectures = () => {
         </div>
 
 
-
-
-
-
         <h3  style={{marginTop:"40px"}} onClick={()=>{sd(1-d)}}>Sarovars{d===0?<img src="down.png" alt="" width="15px"></img>:<img src="side.png" alt="" width="15px"></img>}</h3>
         <div style={{display:(d===1?"block":"none")}}>
         <div style={{marginTop:"0px",display:"flex", border:"0.25px solid", padding:"5px", background:"linear-gradient(90deg, rgba(7,36,0,1) 0%, rgba(7,60,155,1) 0%, rgba(39,121,9,1) 0%, rgba(0,255,171,1) 100%)"}} onClick={()=>{

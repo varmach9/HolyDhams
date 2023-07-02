@@ -14,10 +14,10 @@ const Home = () => {
         <div style={{textAlign:"right",padding:"10%",color:"white",fontFamily:"revert"}}>Tirupati</div>
       </div>
       <div style={{border:"1px solid",width:"80%",marginLeft:"10%",marginTop:"20px",height:`${window.screen.width>600?"300px":"80px"}`,backgroundImage: `linear-gradient(to right, rgba(0,0,0,0), #394e6a), url(https://blog.railyatri.in/wp-content/uploads/2018/09/Char-Dham-Yatra-Route.png)`,backgroundSize: '80% 100%',backgroundRepeat: 'no-repeat',backgroundColor:"#394e6a"}}>
-        <div style={{textAlign:"right",paddingTop:"10%",marginRight:"10px",color:"white",fontFamily:"revert",fontSize:"15px"}}>Himalayas & Char dham</div>
+        <div onClick={()=>{navigate("/himalayas")}} style={{textAlign:"right",paddingTop:"10%",marginRight:"10px",color:"white",fontFamily:"revert",fontSize:"15px"}}>Himalayas & Char dham</div>
       </div>
       <div style={{border:"1px solid",width:"80%",marginLeft:"10%",marginTop:"20px",height:"80%",backgroundImage: `linear-gradient(to right, rgba(0,0,0,0), #464c1e), url(https://www.aanmeegam.in/en/wp-content/uploads/2020/08/srirangam-temple-gopuram-images.jpg)`,backgroundSize: '80% 100%',backgroundRepeat: 'no-repeat',backgroundColor:"#464c1e"}}>
-        <div style={{textAlign:"right",padding:"10%",color:"white",fontFamily:"revert"}}>South India</div>
+        <div onClick={()=>{navigate("/southindia")}} style={{textAlign:"right",padding:"10%",color:"white",fontFamily:"revert"}}>South India</div>
       </div>
       <div style={{border:"1px solid",width:"80%",marginLeft:"10%",marginTop:"20px",height:"80%",backgroundImage: `linear-gradient(to right, rgba(0,0,0,0), #39363d), url(https://i.pinimg.com/originals/bc/2e/31/bc2e3178e1b4cb6d9a825824fbee9507.jpg)`,backgroundSize: '80% 100%',backgroundRepeat: 'no-repeat',backgroundColor:"#39363d"}}>
         <div style={{textAlign:"right",padding:"10%",color:"white",fontFamily:"revert"}}>Jagannath Puri</div>

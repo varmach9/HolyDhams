@@ -10,17 +10,23 @@ const VrajMandal = () => {
       
       <div className='body'>
       {page===1 && <div style={{margin:"10%"}}> 
-      <div style={{float:"left",border:"1px solid",width:"85%",paddingLeft:"20px",marginLeft:"0%",marginTop:"20px",height:"30px"}}  onClick={()=>{navigate('/Vrindavan')}}>Vrindavan</div>
-      <div style={{float:"left",border:"1px solid",width:"85%",paddingLeft:"20px",marginLeft:"0%",marginTop:"20px",height:"30px"}} onClick={()=>{navigate('/Govardhan')}}>Govardhan</div>
-      <div style={{float:"left",border:"1px solid",width:"85%",paddingLeft:"20px",marginLeft:"0%",marginTop:"20px",height:"30px"}} onClick={()=>{navigate('/Mahavan')}}>Gokul-Mahavan</div>
+      <div onClick={()=>{navigate('/Vrindavan')}} style={{border:"1px solid",width:"100%",marginTop:"80px",height:"80%",backgroundImage: `linear-gradient(to right, rgba(0,0,0,0), #f4bf3f), url(https://krishnastore.com/images/cache/cat2-Krishna-Art-KrishnaxArtxPrints-360x188.jpg)`,backgroundSize: '80% 100%',backgroundRepeat: 'no-repeat',backgroundColor:"#f4bf3f"}}>
+        <div onClick={()=>{navigate("/vraj")}} style={{textAlign:"right",padding:"10%",color:"white",fontFamily:"revert"}}>Vrindavan</div>
+      </div>
+      <div onClick={()=>{navigate('/Govardhan')}} style={{border:"1px solid",width:"100%",marginTop:"20px",height:"80%",backgroundImage: `linear-gradient(to right, rgba(0,0,0,0), #9f9db5), url(https://d2al04l58v9bun.cloudfront.net/blog/wp-content/uploads/2022/10/18164937/govardhan-puja-1.jpg)`,backgroundSize: '80% 100%',backgroundRepeat: 'no-repeat',backgroundColor:"#9f9db5"}}>
+        <div style={{textAlign:"right",padding:"10%",color:"white",fontFamily:"revert"}}>Govardhan</div>
+      </div>
+      <div onClick={()=>{navigate('/Mahavan')}} style={{border:"1px solid",width:"100%",marginTop:"20px",height:`${window.screen.width>600?"300px":"80px"}`,backgroundImage: `linear-gradient(to right, rgba(0,0,0,0), #332b0f), url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTM5arndPP9pqGj_ZfDBQq3wSI6LrflahEBZA&usqp=CAU)`,backgroundSize: '80% 100%',backgroundRepeat: 'no-repeat',backgroundColor:"#332b0f"}}>
+        <div style={{textAlign:"right",paddingTop:"10%",marginRight:"10px",color:"white",fontFamily:"revert",fontSize:"15px"}}>Gokul (Mahavan)</div>
+      </div>
       <div style={{float:"left",border:"1px solid",width:"35%",paddingLeft:"20px",marginLeft:"0%",marginTop:"20px",height:"30px"}}  onClick={()=>{navigate('/Belvan')}}>Belvan</div>
-      <div style={{float:"left",border:"1px solid",width:"35%",paddingLeft:"20px",marginLeft:"10%",marginTop:"20px",height:"30px"}} onClick={()=>{navigate('/Kamyavan')}}>Kamyavan</div>
+      <div style={{float:"left",border:"1px solid",width:"35%",paddingLeft:"20px",marginLeft:"15%",marginTop:"20px",height:"30px"}} onClick={()=>{navigate('/Kamyavan')}}>Kamyavan</div>
       <div style={{float:"left",border:"1px solid",width:"35%",paddingLeft:"20px",marginLeft:"0%",marginTop:"20px",height:"30px"}}  onClick={()=>{navigate('/Khadirvan')}}>Khadirvan</div>
-      <div style={{float:"left",border:"1px solid",width:"35%",paddingLeft:"20px",marginLeft:"10%",marginTop:"20px",height:"30px"}} onClick={()=>{navigate('/Kokilavan')}}>Kokilavan</div>
+      <div style={{float:"left",border:"1px solid",width:"35%",paddingLeft:"20px",marginLeft:"15%",marginTop:"20px",height:"30px"}} onClick={()=>{navigate('/Kokilavan')}}>Kokilavan</div>
       <div style={{float:"left",border:"1px solid",width:"35%",paddingLeft:"20px",marginLeft:"0%",marginTop:"20px",height:"30px"}}  onClick={()=>{navigate('/Kumudvan')}}>Kumudvan</div>
-      <div style={{float:"left",border:"1px solid",width:"38%",paddingLeft:"10px",marginLeft:"10%",marginTop:"20px",height:"30px"}} onClick={()=>{navigate('/Lohjanghanvan')}}>Lohjanghanvan</div>
+      <div style={{float:"left",border:"1px solid",width:"38%",paddingLeft:"10px",marginLeft:"15%",marginTop:"20px",height:"30px"}} onClick={()=>{navigate('/Lohjanghanvan')}}>Lohjanghanvan</div>
       <div style={{float:"left",border:"1px solid",width:"35%",paddingLeft:"20px",marginLeft:"0%",marginTop:"20px",height:"30px"}}  onClick={()=>{navigate('/Madhuvan')}}>Madhuvan</div>
-      <div style={{float:"left",border:"1px solid",width:"35%",paddingLeft:"20px",marginLeft:"10%",marginTop:"20px",height:"30px"}}  onClick={()=>{navigate('/Talvan')}}>Talvan</div>
+      <div style={{float:"left",border:"1px solid",width:"35%",paddingLeft:"20px",marginLeft:"15%",marginTop:"20px",height:"30px"}}  onClick={()=>{navigate('/Talvan')}}>Talvan</div>
       </div>}
       {page===2 && <div> <Lectures/></div>}
       {page===3 && <div> <Videos/></div>}

@@ -12,6 +12,8 @@ import { useState, useContext } from 'react';
 import {AudioContext} from "./AudioContext"
 import Audiopage from './Pages/Audio';
 import KusumSarovar from './Pages/KusumSarovar';
+import SouthIndia from './Pages/SouthIndia';
+import Himalayas from './Pages/Himalayas';
 function App() {
   const [isSidebarOpen,s]=useState(false)
   const [audio,setaudio]=useState([1,2,3,4])
@@ -75,6 +77,9 @@ function App() {
           <Route path="/" element={<Home/>} />
           <Route path="/settings" element={<Settings/>}/>
           <Route path="/vraj" element={<VrajMandal/>} /> 
+          <Route path="/southindia" element={<SouthIndia/>} /> 
+          <Route path="/himalayas" element={<Himalayas/>} /> 
+
           <Route path="/govardhan" element={<Govardhan/>} />
           <Route path="/vrindavan" element={<Vrindavan/>} />
           <Route path="/belvan" element={<Belvan/>} />
