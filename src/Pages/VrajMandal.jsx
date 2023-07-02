@@ -10,10 +10,10 @@ const VrajMandal = () => {
       
       <div className='body'>
       {page===1 && <div style={{margin:"10%"}}> 
-      <div onClick={()=>{navigate('/Vrindavan')}} style={{border:"1px solid",width:"100%",marginTop:"80px",height:"80%",backgroundImage: `linear-gradient(to right, rgba(0,0,0,0), #f4bf3f), url(https://krishnastore.com/images/cache/cat2-Krishna-Art-KrishnaxArtxPrints-360x188.jpg)`,backgroundSize: '80% 100%',backgroundRepeat: 'no-repeat',backgroundColor:"#f4bf3f"}}>
+      <div onClick={()=>{navigate('/Vrindavan')}} style={{border:"1px solid",width:"100%",marginTop:"80px",height:"80%",backgroundImage: `linear-gradient(to right, rgba(0,0,0,0), #a04c0d), url(https://krishnastore.com/images/cache/cat2-Krishna-Art-KrishnaxArtxPrints-360x188.jpg)`,backgroundSize: '80% 100%',backgroundRepeat: 'no-repeat',backgroundColor:"#a04c0d"}}>
         <div onClick={()=>{navigate("/vraj")}} style={{textAlign:"right",padding:"10%",color:"white",fontFamily:"revert"}}>Vrindavan</div>
       </div>
-      <div onClick={()=>{navigate('/Govardhan')}} style={{border:"1px solid",width:"100%",marginTop:"20px",height:"80%",backgroundImage: `linear-gradient(to right, rgba(0,0,0,0), #9f9db5), url(https://d2al04l58v9bun.cloudfront.net/blog/wp-content/uploads/2022/10/18164937/govardhan-puja-1.jpg)`,backgroundSize: '80% 100%',backgroundRepeat: 'no-repeat',backgroundColor:"#9f9db5"}}>
+      <div onClick={()=>{navigate('/Govardhan')}} style={{border:"1px solid",width:"100%",marginTop:"20px",height:"80%",backgroundImage: `linear-gradient(to right, rgba(0,0,0,0), #8989a1), url(https://d2al04l58v9bun.cloudfront.net/blog/wp-content/uploads/2022/10/18164937/govardhan-puja-1.jpg)`,backgroundSize: '80% 100%',backgroundRepeat: 'no-repeat',backgroundColor:"#8989a1"}}>
         <div style={{textAlign:"right",padding:"10%",color:"white",fontFamily:"revert"}}>Govardhan</div>
       </div>
       <div onClick={()=>{navigate('/Mahavan')}} style={{border:"1px solid",width:"100%",marginTop:"20px",height:`${window.screen.width>600?"300px":"80px"}`,backgroundImage: `linear-gradient(to right, rgba(0,0,0,0), #332b0f), url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTM5arndPP9pqGj_ZfDBQq3wSI6LrflahEBZA&usqp=CAU)`,backgroundSize: '80% 100%',backgroundRepeat: 'no-repeat',backgroundColor:"#332b0f"}}>

@@ -23,7 +23,7 @@ const Home = () => {
         <div style={{textAlign:"right",padding:"10%",color:"white",fontFamily:"revert"}}>Jagannath Puri</div>
       </div>
       <div style={{border:"1px solid",width:"80%",marginLeft:"10%",marginTop:"20px",height:"80%",backgroundImage: `linear-gradient(to right, rgba(0,0,0,0), #5788cb), url(mayapur.jpg)`,backgroundSize: '80% 100%',backgroundRepeat: 'no-repeat',backgroundColor:"#5788cb"}}>
-        <div style={{textAlign:"right",padding:"10%",color:"white",fontFamily:"revert"}}>Mayapur</div>
+        <div style={{textAlign:"right",padding:"10%",color:"white",fontFamily:"revert"}}>Nawadwip</div>
       </div>
       <div style={{height:"20px"}}>
 
