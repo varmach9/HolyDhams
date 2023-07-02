@@ -14,6 +14,7 @@ import Audiopage from './Pages/Audio';
 import KusumSarovar from './Pages/KusumSarovar';
 import SouthIndia from './Pages/SouthIndia';
 import Himalayas from './Pages/Himalayas';
+import { Lectures1 } from './Pages/VrajMandalResources';
 function App() {
   const [isSidebarOpen,s]=useState(false)
   const [audio,setaudio]=useState([1,2,3,4])
@@ -77,6 +78,7 @@ function App() {
           <Route path="/" element={<Home/>} />
           <Route path="/settings" element={<Settings/>}/>
           <Route path="/vraj" element={<VrajMandal/>} /> 
+          <Route path="/vrajlec" element={<Lectures1/>} /> 
           <Route path="/southindia" element={<SouthIndia/>} /> 
           <Route path="/himalayas" element={<Himalayas/>} /> 
 

@@ -14,7 +14,7 @@ export const Videos = () => {
     </div>
   )
 }
-export const Lectures = () => {
+export const Lectures1 = () => {
   const {audio,setaudio} = useContext(AudioContext)
   const navigate = useNavigate();
   

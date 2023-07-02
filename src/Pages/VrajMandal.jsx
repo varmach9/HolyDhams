@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import "../App.css"
 import { useNavigate } from 'react-router-dom';
-import { Videos, Photos, More, Lectures } from './VrajMandalResources'
+import { Videos,More } from './VrajMandalResources'
 const VrajMandal = () => {
   const [page,setpage]=useState(1)
   const navigate = useNavigate();
@@ -28,7 +28,7 @@ const VrajMandal = () => {
       <div style={{float:"left",border:"1px solid",width:"35%",paddingLeft:"20px",marginLeft:"0%",marginTop:"20px",height:"30px"}}  onClick={()=>{navigate('/Madhuvan')}}>Madhuvan</div>
       <div style={{float:"left",border:"1px solid",width:"35%",paddingLeft:"20px",marginLeft:"15%",marginTop:"20px",height:"30px"}}  onClick={()=>{navigate('/Talvan')}}>Talvan</div>
       </div>}
-      {page===2 && <div> <Lectures/></div>}
+      {/* {page===2 && <div> <Lectures/></div>} */}
       {page===3 && <div> <Videos/></div>}
       {page===4 && <div> <More/></div>}
       </div>
@@ -41,7 +41,7 @@ const VrajMandal = () => {
           <div>Read</div>
           <div style={{height:"3px",backgroundColor:(page===1?"white":"")}}></div>
         </div>
-        <div onClick={()=>{setpage(2)}} style={{width:"25%",float:"left"}}>
+        <div onClick={()=>{navigate("/vrajlec")}} style={{width:"25%",float:"left"}}>
           <div>Lectures</div>
           <div style={{height:"3px",backgroundColor:(page===2?"white":"")}}></div>
         </div>
