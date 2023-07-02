@@ -355,22 +355,34 @@ const Govardhan = () => {
     hill in six or seven hours.
   </p>
 </>
-
   </div>
-  
-  
+  <div style={{height:"50px"}}></div>
   </div>
       </div>
-         </div>}
+         </div>
+         }
       {page===2 && <div> <Lectures/></div>}
       {page===3 && <div> <Videos/></div>}
       {page===4 && <div> <More/></div>}
       <div className='footer' style={{display:"flex"}}>
-        <div onClick={()=>{setpage(3)}} style={{width:"25%",float:"left"}}>Videos</div>
-        <div onClick={()=>{setpage(1)}} style={{width:"25%",float:"left",height:"20px"}}>Read</div>
-        <div onClick={()=>{setpage(2)}} style={{width:"25%",float:"left"}}>Lectures</div>
-        <div onClick={()=>{setpage(4)}} style={{width:"25%",float:"left"}}>More</div>
+      <div onClick={()=>{setpage(3)}} style={{width:"25%",float:"left"}}>
+          <div>Videos</div>
+          <div style={{height:"3px",backgroundColor:(page===3?"white":"")}}></div>
+        </div>
+        <div onClick={()=>{setpage(1)}} style={{width:"25%",float:"left",height:"20px"}}>
+          <div>Read</div>
+          <div style={{height:"3px",backgroundColor:(page===1?"white":"")}}></div>
+        </div>
+        <div onClick={()=>{setpage(2)}} style={{width:"25%",float:"left"}}>
+          <div>Lectures</div>
+          <div style={{height:"3px",backgroundColor:(page===2?"white":"")}}></div>
+        </div>
+        <div onClick={()=>{setpage(4)}} style={{width:"25%",float:"left"}}>
+          <div>More</div>
+          <div style={{height:"3px",width:"70%",marginLeft:"15px",backgroundColor:(page===4?"white":"")}}></div>
+        </div>
       </div>
+      
     </div>
   )
 }

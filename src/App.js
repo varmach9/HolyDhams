@@ -11,6 +11,7 @@ import Belvan from './Pages/VrajMandal places/Belvan';
 import { useState, useContext } from 'react';
 import {AudioContext} from "./AudioContext"
 import Audiopage from './Pages/Audio';
+import KusumSarovar from './Pages/KusumSarovar';
 function App() {
   const [isSidebarOpen,s]=useState(false)
   const [audio,setaudio]=useState([1,2,3,4])
@@ -35,7 +36,7 @@ function App() {
         var sidebar1 = document.getElementById('sidebar1');
         var hamburgerBtn = document.getElementById('hamburger-btn');
         function openSidebar() {
-          console.log(0)
+          // console.log(0)
           sidebar.style.left = '0';
           sidebar1.style.left = '250px';
           document.getElementById("main").style.opacity="0.5"
@@ -45,14 +46,14 @@ function App() {
         }
         
         function closeSidebarOnClickOutside(event) {
-          console.log(1)
+          // console.log(1)
           if (!sidebar.contains(event.target) && event.target !== hamburgerBtn) {
             closeSidebar();
           }
         }
         
         function closeSidebar() {
-          console.log(2)
+          // console.log(2)
           sidebar.style.left = '-250px';
           document.getElementById("main").style.opacity=""
           sidebar1.style.left = '-250px';
@@ -78,6 +79,7 @@ function App() {
           <Route path="/vrindavan" element={<Vrindavan/>} />
           <Route path="/belvan" element={<Belvan/>} />
           <Route path="/audio" element={<Audiopage/>} />
+          <Route path="/ks" element={<KusumSarovar/>} />
         </Routes>  
           </div>  
     </Router>

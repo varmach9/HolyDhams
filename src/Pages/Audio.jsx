@@ -35,10 +35,10 @@ const Audiopage = () => {
         document.getElementById("source").style.display="none"
     }
   return (
-    <div style={{marginLeft:"10%",marginRight:"10%",marginTop:"80px"}}>
-    {audio[2].length<25?<h2>{audio[2]}</h2>:<h3>{audio[2]}</h3>}
+    <div style={{marginLeft:"10%",marginRight:"10%",marginTop:"60px"}}>
+    {audio[2].length<29?<h2>{audio[2]}</h2>:<h3>{audio[2]}</h3>}
     <img src={audio[0]} alt="" width="100%" height="100%"></img>
-    <div className="audio-player" style={{marginTop:"30px"}}>
+    <div className="audio-player" style={{marginTop:"10px"}}>
       <audio
         ref={audioRef}
         controls
