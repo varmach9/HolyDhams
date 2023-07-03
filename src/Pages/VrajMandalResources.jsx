@@ -169,9 +169,9 @@ export const Lectures1 = () => {
           "Paavan Sarovar","HH Radhanath Swami"])
            navigate("/audio")
         }}><PlayArrowIcon style={{marginRight:"10px"}}/>Paavan Sarovar</div>
-
+        
         </div>
-
+      
       </div>
     )
   }

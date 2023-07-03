@@ -1,7 +1,6 @@
 import React, { useState } from 'react'
 import "../../App.css"
 import { useNavigate } from 'react-router-dom';
-import { Videos, Photos, More, Lectures } from '../VrajMandalResources'
 
 const Govardhan = () => {
   const [a,sa]=useState(0)
@@ -12,10 +11,8 @@ const Govardhan = () => {
   const [f,sf]=useState(0)
   const navigate = useNavigate();
   const [g,sg]=useState(0)
-  const [page,setpage]=useState(1)
   return (
-    <div>
-      {page===1 && <div style={{marginTop:"5%",marginLeft:"8%",marginRight:"5%"}}>
+    <div> <div style={{marginTop:"5%",marginLeft:"8%",marginRight:"5%"}}>
       <h1 style={{color:"red"}}>Govardhvan</h1>
       <div>
 
@@ -362,30 +359,9 @@ const Govardhan = () => {
   </div>
       </div>
          </div>
-         }
-      {/* {page===2 && <div> <Lectures/></div>} */}
-      {page===3 && <div> <Videos/></div>}
-      {page===4 && <div> <More/></div>}
-      <div className='footer' style={{display:"flex"}}>
-      <div onClick={()=>{setpage(3)}} style={{width:"25%",float:"left"}}>
-          <div>Videos</div>
-          <div style={{height:"3px",backgroundColor:(page===3?"white":"")}}></div>
-        </div>
-        <div onClick={()=>{setpage(1)}} style={{width:"25%",float:"left",height:"20px"}}>
-          <div>Read</div>
-          <div style={{height:"3px",backgroundColor:(page===1?"white":"")}}></div>
-        </div>
-        <div onClick={()=>{navigate("/vrajlec")}} style={{width:"25%",float:"left"}}>
-          <div>Lectures</div>
-          <div style={{height:"3px",backgroundColor:(page===2?"white":"")}}></div>
-        </div>
-        <div onClick={()=>{setpage(4)}} style={{width:"25%",float:"left"}}>
-          <div>More</div>
-          <div style={{height:"3px",width:"70%",marginLeft:"15px",backgroundColor:(page===4?"white":"")}}></div>
-        </div>
+      
       </div>
       
-    </div>
   )
 }
 
