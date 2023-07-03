@@ -22,6 +22,9 @@ const Home = () => {
       <div style={{border:"1px solid",width:"80%",marginLeft:"10%",marginTop:"20px",height:"80%",backgroundImage: `linear-gradient(to right, rgba(0,0,0,0), #5788cb), url(mayapur.jpg)`,backgroundSize: '80% 100%',backgroundRepeat: 'no-repeat',backgroundColor:"#5788cb"}}>
         <div style={{textAlign:"right",padding:"10%",color:"white",fontFamily:"revert"}}>Nawadwip</div>
       </div>
+      <div style={{border:"1px solid",width:"80%",marginLeft:"10%",marginTop:"20px",height:"80%",backgroundImage: `linear-gradient(to right, rgba(0,0,0,0), #4a9381), url(https://assets-news.housing.com/news/wp-content/uploads/2022/08/16114503/DWARKA-FEATURE-compressed.jpg)`,backgroundSize: '90% 100%',backgroundRepeat: 'no-repeat',backgroundColor:"#4a9381"}}>
+        <div onClick={()=>{navigate("/westindia")}} style={{textAlign:"right",padding:"10%",color:"white",fontFamily:"revert"}}>West India</div>
+      </div>
       <div style={{height:"20px"}}>
 
       </div>

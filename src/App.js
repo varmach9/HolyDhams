@@ -15,6 +15,7 @@ import KusumSarovar from './Pages/KusumSarovar';
 import SouthIndia from './Pages/SouthIndia';
 import Himalayas from './Pages/Himalayas';
 import { Lectures1 } from './Pages/VrajMandalResources';
+import WestIndia from './Pages/WestIndia';
 function App() {
   const [isSidebarOpen,s]=useState(false)
   const [audio,setaudio]=useState([1,2,3,4])
@@ -81,6 +82,7 @@ function App() {
           <Route path="/vrajlec" element={<Lectures1/>} /> 
           <Route path="/southindia" element={<SouthIndia/>} /> 
           <Route path="/himalayas" element={<Himalayas/>} /> 
+          <Route path="/westindia" element={<WestIndia/>} /> 
 
           <Route path="/govardhan" element={<Govardhan/>} />
           <Route path="/vrindavan" element={<Vrindavan/>} />
